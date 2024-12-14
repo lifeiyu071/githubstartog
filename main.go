@@ -42,7 +42,7 @@ func FetchUserStar(user string, page int) *[]model.StarInfo {
 	return &infos
 }
 
-// openai 通用请求代码
+// openai 通用请求代码 1
 func OpenaiRequest(prompt string) string {
 	// 如果 prompt 的长度（以字节计）大于 65536 则截断（注意中文字符）
 	if len([]rune(prompt)) > 10000 {
